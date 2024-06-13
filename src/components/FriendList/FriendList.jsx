@@ -1,4 +1,6 @@
 import FriendListItem from '../FriendListItem/FriendListItem';
+import clsx from "clsx";
+import css from "./FriendList.module.css";
 
 // ========
 
@@ -23,10 +25,10 @@ import FriendListItem from '../FriendListItem/FriendListItem';
 
 export default function FriendList({ friends }) {
   return (
-    <ul>
+    <ul className ={clsx(css["friendList-list"])} >
       {friends.map(item => {
         return (
-          <li key={item.id}>
+          <li className ={clsx(css["friendList-item"])} key={item.id} >
             <FriendListItem item= {item} />
           </li>
         );

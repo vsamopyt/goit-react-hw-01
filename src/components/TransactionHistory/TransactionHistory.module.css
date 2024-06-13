@@ -1,0 +1,35 @@
+.transactionHistory-table {
+    width: 100%;
+}
+
+.transactionHistory-table,
+.transactionHistory-table-title,
+.transactionHistory-table-value {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.transactionHistory-table-title,
+.transactionHistory-table-value {
+    width:33%;
+    font-size: 18px;
+    padding: 6px 0;
+}
+
+.transactionHistory-table-title {
+    color: white;
+    background-color: rgb(13, 12, 12);
+}
+
+.type {
+composes: transactionHistory-table-value;
+text-align: left;
+padding-left: 80px;
+text-transform:capitalize
+
+}
+
+.transactionHistory-table-row:nth-child(even) {
+    background-color: #c5cdcd;
+  }
