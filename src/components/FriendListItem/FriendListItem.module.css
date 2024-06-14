@@ -22,23 +22,14 @@
   
 }
 
-/* .friendListItem-text.true {
-   color: green
-}
 
-.friendListItem-text.false {
-   color: red;
-}  */
-
-
-
-.false {
+.status-offline {
    composes: friendListItem-text;
    color: red;
 } 
 
 
-.true {
+.status-online {
    composes: friendListItem-text;
    color: green
 }
